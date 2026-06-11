@@ -41,7 +41,7 @@ function AppLayout() {
   useEffect(() => {
     if (user) loadThreads();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [user]);
+  }, [user, activeId]);
 
   const createThread = async () => {
     if (!user) return;
