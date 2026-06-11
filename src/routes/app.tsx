@@ -138,7 +138,7 @@ function AppLayout() {
 
       <main className="flex-1 overflow-hidden">
         <MobileBar onNew={createThread} />
-        <Outlet context={{ refreshThreads: loadThreads }} />
+        <Outlet />
       </main>
     </div>
   );
